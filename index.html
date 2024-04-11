@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>The Weather for today is...</h1>
+    <label for="">City: </label>
+    <input type="text" placeholder="London" id="city" required />
+    <button>search</button>
+    <div>
+      <h1>{%CITY_NAME}</h1>
+      <h2>{%TEMP}</h2>
+      <h2>{%CONDTION}</h2>
+      <h3>{%LOCATION}</h3>
+      <h3>{%TIME}</h3>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
