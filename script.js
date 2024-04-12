@@ -1,7 +1,6 @@
-import { API_KEY } from './key.js';
-
 const cityName = document.querySelector('#city');
 const button = document.querySelector('button');
+const API_KEY = '4a73969e5717496c81b74822241104';
 
 button.addEventListener('click', function () {
   getWeatherInfo(cityName.value);
