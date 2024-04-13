@@ -25,7 +25,6 @@ async function getWeatherInfo(City) {
 
     const weatherData = await response.json();
 
-    console.log(weatherData);
     condition.innerHTML = weatherData.current.condition.text;
     location.innerHTML = `${weatherData.location.name}, ${weatherData.location.country}`;
     temp.innerHTML = `${weatherData.current.temp_c} °C`;
@@ -40,7 +39,7 @@ async function getWeatherInfo(City) {
 
     return weatherData;
   } catch (err) {
-    console.log('errrrr');
+    console.log('error');
   }
 }
 
